@@ -12,4 +12,3 @@ class Animal:
     def mudar_cor(self, nova_cor):
         self.cor = nova_cor
         print("A cor do animal: " + self.nome + "foi alterada para: " + nova_cor)
-        return
