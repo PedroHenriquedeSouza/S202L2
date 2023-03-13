@@ -1,0 +1,12 @@
+[{
+   "nome": "Dumbo",
+   "cores": ["cinza", "preto"],
+   "som": "PAAAAAH",
+   "especie": "Africano"
+},
+{
+   "nome": "Horton",
+   "cores": ["vermelho", "laranja"],
+   "som": "paaah",
+   "especie": "Pigmeu-de-bornéu"
+ }]
