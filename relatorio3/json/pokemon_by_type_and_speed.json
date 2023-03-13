@@ -1,0 +1,74 @@
+[
+    {
+        "_id": {
+            "$oid": "640fab9dfa4d14c527de312e"
+        },
+        "id": 256,
+        "name": {
+            "english": "Combusken",
+            "japanese": "\u30ef\u30ab\u30b7\u30e3\u30e2",
+            "chinese": "\u529b\u58ee\u9e21",
+            "french": "Galifeu"
+        },
+        "type": [
+            "Fire",
+            "Fighting"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 85,
+            "Defense": 60,
+            "Sp. Attack": 85,
+            "Sp. Defense": 60,
+            "Speed": 55
+        }
+    },
+    {
+        "_id": {
+            "$oid": "640fab9dfa4d14c527de328e"
+        },
+        "id": 608,
+        "name": {
+            "english": "Lampent",
+            "japanese": "\u30e9\u30f3\u30d7\u30e9\u30fc",
+            "chinese": "\u706f\u706b\u5e7d\u7075",
+            "french": "M\u00e9lancolux"
+        },
+        "type": [
+            "Ghost",
+            "Fire"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 40,
+            "Defense": 60,
+            "Sp. Attack": 95,
+            "Sp. Defense": 60,
+            "Speed": 55
+        }
+    },
+    {
+        "_id": {
+            "$oid": "640fab9dfa4d14c527de328f"
+        },
+        "id": 609,
+        "name": {
+            "english": "Chandelure",
+            "japanese": "\u30b7\u30e3\u30f3\u30c7\u30e9",
+            "chinese": "\u6c34\u6676\u706f\u706b\u7075",
+            "french": "Lugulabre"
+        },
+        "type": [
+            "Ghost",
+            "Fire"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 55,
+            "Defense": 90,
+            "Sp. Attack": 145,
+            "Sp. Defense": 90,
+            "Speed": 80
+        }
+    }
+]

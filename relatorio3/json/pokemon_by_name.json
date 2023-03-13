@@ -1,0 +1,25 @@
+[
+    {
+        "_id": {
+            "$oid": "640fab9dfa4d14c527de3048"
+        },
+        "id": 26,
+        "name": {
+            "english": "Raichu",
+            "japanese": "\u30e9\u30a4\u30c1\u30e5\u30a6",
+            "chinese": "\u96f7\u4e18",
+            "french": "Raichu"
+        },
+        "type": [
+            "Electric"
+        ],
+        "base": {
+            "HP": 60,
+            "Attack": 90,
+            "Defense": 55,
+            "Sp. Attack": 90,
+            "Sp. Defense": 80,
+            "Speed": 110
+        }
+    }
+]
