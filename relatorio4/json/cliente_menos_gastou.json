@@ -1,0 +1,9 @@
+[
+    {
+        "_id": {
+            "compra": 1,
+            "cliente": "A"
+        },
+        "total": 40
+    }
+]
