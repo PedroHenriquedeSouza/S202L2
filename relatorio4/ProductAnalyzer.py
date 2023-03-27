@@ -14,7 +14,7 @@ class ProductAnalyzer:
         result2 = db.collection.aggregate([
             {"$unwind": "$produtos"},
             {"$group": {"_id": "$produtos.nome", "quantidade": {"$sum": "$produtos.quantidade"}}},
-            {"$sort": {"total": 1}},
+            {"$sort": {"quantidade": 1}},
             {"$limit": 1}
         ])
         return result2
