@@ -14,8 +14,6 @@ book1 = book_model.read_book_by_id(id_book1)
 book2 = book_model.read_book_by_id(id_book2)
 book3 = book_model.read_book_by_id(id_book3)
 
-libraryJson = book1
-
 writeAJson((book1,book2, book3), "library")
 
 book_model.update_book(id_book3, "Harry Potter e o Prisioneiro de Askaban", "JK Rowling", 2004, 35.90)
