@@ -1,0 +1,29 @@
+[
+    {
+        "_id": {
+            "$oid": "642b4aac730077761f868f98"
+        },
+        "titulo": "Moby Dick",
+        "autor": "Herman Melville",
+        "ano": 1851,
+        "preco": 25.0
+    },
+    {
+        "_id": {
+            "$oid": "642b4aac730077761f868f99"
+        },
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "ano": 1949,
+        "preco": 20.0
+    },
+    {
+        "_id": {
+            "$oid": "642b4aac730077761f868f9a"
+        },
+        "titulo": "Harry Potter e o Prisioneiro de Asaban",
+        "autor": "JK Rowlin",
+        "ano": 2023,
+        "preco": 50.0
+    }
+]
