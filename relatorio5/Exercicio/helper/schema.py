@@ -8,11 +8,8 @@ book_validator = {
                 "descricao": "O titulo deve ser do tipo string"
             },
             "autor": {
-                "bsonType": "array",
-                "items": {
-                    "bsonType": "objectId",
-                    "descricao": "O autor deve ser do tipo string"
-                }
+                "bsonType": "string",
+                "descricao": "O autor deve ser do tipo string"
             },
             "ano": {
                 "bsonType": "int",
@@ -21,8 +18,8 @@ book_validator = {
                 "descricao": "O ano deve ser do tipo int"
             },
             "preco": {
-                "bsonType": "float",
-                "descricao": "O preco deve ser do tipo float"
+                "bsonType": "double",
+                "descricao": "O preco deve ser do tipo double"
             }
         }
     }
