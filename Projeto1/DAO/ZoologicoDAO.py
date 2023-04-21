@@ -1,5 +1,4 @@
 from database.Database import Database
-from bson.objectid import ObjectId
 from model.Animal import Animal
 import json
 
@@ -33,38 +32,26 @@ class ZoologicoDAO:
             print(f"An error occurred while reading animal: {error}")
             return None
 
-    def update_book(self, book_id: str, title: str, author: str, year: int, price: float) -> int:
+    def updateAnimal(self, animal: Animal) -> int:
         try:
-            result = self.collection.update_one({"_id": ObjectId(book_id)}, {"$set": {"titulo": title, "autor": author, "year": year, "preco": price}})
+            result = self.data.update_one({"id": animal.id}, {"$set": {"nome": animal.nome, "especie": animal.especie, "idade": animal.idade}})
             if result.modified_count:
-                print(f"Book {book_id} updated with title {title}, author {author}, year {year} and price {price}")
+                print(f"Animal {animal.id} updated with name {animal.nome}, specie {animal.especie}, age {animal.idade}")
             else:
-                print(f"No book found with id {book_id}")
+                print(f"No animal found with id {animal.id}")
             return result.modified_count
         except Exception as error:
-            print(f"An error occurred while updating book: {error}")
-            return None
-        
-    def update_book_price(self, book_id: str, price: float) -> int:
-        try:
-            result = self.collection.update_one({"_id": ObjectId(book_id)}, {"$set": {"preco": price}})
-            if result.modified_count:
-                print(f"Book {book_id} updated with price {price}")
-            else:
-                print(f"No book found with id {book_id}")
-            return result.modified_count
-        except Exception as error:
-            print(f"An error occurred while updating book: {error}")
+            print(f"An error occurred while updating animal: {error}")
             return None
 
-    def delete_book(self, book_id: str) -> int:
+    def deleteAnimal(self, animalId: str) -> int:
         try:
-            result = self.collection.delete_one({"_id": ObjectId(book_id)})
+            result = self.data.delete_one({"id": animalId})
             if result.deleted_count:
-                print(f"Book {book_id} deleted")
+                print(f"Animal {animalId} deleted")
             else:
-                print(f"No book found with id {book_id}")
+                print(f"No animal found with id {animalId}")
             return result.deleted_count
         except Exception as error:
-            print(f"An error occurred while deleting book: {error}")
+            print(f"An error occurred while deleting animal: {error}")
             return None

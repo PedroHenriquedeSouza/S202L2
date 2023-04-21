@@ -36,9 +36,23 @@ class ZoologicoCLI:
         self.zoologico.createAnimal(animal=animal)
 
     def readAnimal(self):
-        animalID = input(print("Entre com o ID do animal desejado: "))
+        animalID = input("Entre com o ID do animal desejado: ")
         self.zoologico.readAnimal(animal_id=animalID)
-    def updateAnimal():
-        pass
-    def deleteAnimal():
-        pass
+    def updateAnimal(self):
+        animalID = input("Entre com o ID do animal que deseja atualizar: ")
+        animalDict = self.zoologico.readAnimal(animal_id=animalID)
+        
+        if animalDict:
+            nome = input("Nome do animal: ")
+            especie = input("Espécie: ")
+            idade = input("Idade: ")
+            animal = Animal(id=animalDict["id"], idade=idade, especie=especie, nome=nome)
+            self.zoologico.updateAnimal(animal=animal)
+        else:
+            print("Animal não localizado!")
+    def deleteAnimal(self):
+        animalID = input("Entre com o ID do animal que deseja deletar: ")
+        if self.zoologico.readAnimal(animal_id=animalID):
+            self.zoologico.deleteAnimal(animalID)
+        else:
+            print("Animal não localizado!")

@@ -16,9 +16,9 @@ while(flag):
     elif (selectedOption == 2):
         cli.readAnimal()
     elif (selectedOption == 3):
-        cli.createAnimal()
+        cli.updateAnimal()
     elif (selectedOption == 4):
-        cli.createAnimal()
+        cli.deleteAnimal()
     else:
         print("Opção Inválida!")
         flag = False

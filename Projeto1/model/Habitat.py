@@ -7,6 +7,3 @@ class Habitat:
         self.nome = nome
         self.tipoAmbiente = tipoAmbiente
         self.cuidador = cuidador.__dict__
-    
-    def toJSON(self):
-        return json.dumps(self.__dict__, check_circular=True)
