@@ -10,9 +10,8 @@ class TeacherCRUD:
     def read_teacher(self, nome):
         query = "MATCH (t:Teacher{nome:$nome}) RETURN t.nome AS nome, t.ano_nasc AS nascimento, t.cpf AS cpf LIMIT 1"
         parameters = {"nome": nome}
-        results = self.db.execute_query(query)
-        if len(results) > 0:
-            return [result["nome"] for result in results]
+        results = self.db.execute_query(query, parameters)
+        return [[result["nome"], result["nascimento"], result["cpf"]] for result in results]
 
     def delete_teacher(self, nome):
         query = "MATCH (t:Teacher {nome: $nome}) DETACH DELETE t"
